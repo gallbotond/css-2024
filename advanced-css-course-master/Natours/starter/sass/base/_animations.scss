@@ -1,0 +1,42 @@
+/* define custom named animations */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) rotate(0deg);
+    }
+
+    80% {
+        transform: translateX(10px) rotate(2deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) rotate(0deg);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) rotate(0deg);
+    }
+
+    80% {
+        transform: translateX(-10px) rotate(-2deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) rotate(0deg);
+    }
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

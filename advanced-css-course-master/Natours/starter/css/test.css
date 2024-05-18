@@ -1,0 +1,23 @@
+.clip-path-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* This will give the rounded corner effect */
+    width: 300px; /* Add a width */
+    height: 300px; /* Add a height */
+}
+
+.clip-path-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: lightblue; /* Change the fill color */
+}
+
+.content {
+    position: relative; /* This will make the content appear above the SVG */
+    z-index: 1; /* Ensure the content is above the SVG */
+    color: black; /* Make the text color black */
+    padding: 10px; /* Add some padding */
+}
