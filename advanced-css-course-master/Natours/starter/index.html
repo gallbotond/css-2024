@@ -16,6 +16,43 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input
+                type="checkbox"
+                class="navigation__checkbox"
+                id="navi-toggle"
+            />
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#about" class="navigation__link"
+                            >About Natours</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#features" class="navigation__link"
+                            >Your Benefits</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#tours" class="navigation__link"
+                            >Popular Tours</a
+                        >
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#stories" class="navigation__link">Stories</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#book" class="navigation__link">Book Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="logo" class="header__logo" />
@@ -65,7 +102,7 @@
         </section> -->
 
         <main>
-            <section class="section-about">
+            <section id="about" class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Exciting tours for adventurous people
@@ -111,7 +148,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
+            <section id="features" class="section-features">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -173,7 +210,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section id="tours" class="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Most popular tours</h2>
                 </div>
@@ -209,7 +246,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -246,7 +283,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -283,7 +320,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$797</p>
                                     </div>
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -297,7 +334,7 @@
                 </div>
             </section>
 
-            <section class="section-stories">
+            <section id="stories" class="section-stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/tropical loop.mp4" type="video/mp4" />
@@ -377,7 +414,7 @@
                 </div>
             </section>
 
-            <section class="section-book">
+            <section id="book" class="section-book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -413,7 +450,7 @@
                                     >
                                 </div>
 
-                                <div class="form__radio">
+                                <div class="form__group u-margin-bottom-medium">
                                     <div class="form__radio-group">
                                         <input
                                             type="radio"
@@ -424,10 +461,12 @@
                                         <label
                                             for="small"
                                             class="form__radio-label"
-                                            ><span class="form__radio-button"
-                                                >Small tour group</span
-                                            ></label
                                         >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Small tour group
+                                        </label>
                                     </div>
                                     <div class="form__radio-group">
                                         <input
@@ -439,11 +478,18 @@
                                         <label
                                             for="large"
                                             class="form__radio-label"
-                                            ><span class="form__radio-button"
-                                                >Large tour group</span
-                                            ></label
-                                        >
+                                            ><span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Large tour group
+                                        </label>
                                     </div>
+                                </div>
+
+                                <div class="form__group u-margin-bottom-big">
+                                    <button class="btn btn--green">
+                                        Next steps &rarr;
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -451,5 +497,110 @@
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <picture class="footer__logo">
+                    <source
+                        srcset="
+                            img/logo-green-small-1x.png 1x,
+                            img/logo-green-small-2x.png 2x
+                        "
+                        media="(max-width: 37.5em)"
+                    />
+                    <img
+                        srcset="
+                            img/logo-green-1x.png 1x,
+                            img/logo-green-2x.png 2x
+                        "
+                        alt="Full logo"
+                        src="img/logo-green-2x.png"
+                    />
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Company</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Contact us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Carrers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link"
+                                    >Privacy policy</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built by
+                        <a href="#" class="footer__link">Jonas Schmedtmann</a>
+                        for his online course
+                        <a href="#" class="footer__link"
+                            >Advanced CSS and Sass</a
+                        >. Copyright &copy; by Jonas Schmedtmann. You are 100%
+                        allowed to use this webpage for both personal and
+                        commercial use, but NOT to claim it as your own design.
+                        A credit to the original author, Jonas Schmedtmann, is
+                        of course highly appreciated!
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img
+                        src="img/nat-8.jpg"
+                        alt="tour photo"
+                        class="popup__img"
+                    />
+                    <img
+                        src="img/nat-9.jpg"
+                        alt="tour photo"
+                        class="popup__img"
+                    />
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">
+                        Start booking now
+                    </h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Important &ndash; Please read the terms before booking
+                    </h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Excepturi necessitatibus veritatis repellat soluta eos
+                        dolorem unde consequuntur ipsam, dicta quasi cupiditate
+                        placeat, itaque sit, voluptas dignissimos? Excepturi
+                        cumque inventore id accusamus! Excepturi neque dolorem
+                        nihil veritatis ex assumenda aspernatur adipisci magnam
+                        quis voluptatibus! Dignissimos, natus. Mollitia
+                        molestiae possimus quasi deserunt ipsa cupiditate.
+                        Impedit delectus neque eius saepe? Doloribus ratione
+                        dolore tempore a quis quia alias, vel ipsam voluptates
+                        voluptatem veniam accusamus architecto. Suscipit
+                        blanditiis tempore nisi nam rem consequatur ex ipsum
+                        laborum iusto harum aliquam facilis eligendi vitae, sint
+                        architecto, ea facere. Accusantium dolor libero
+                        doloribus optio iusto atque in.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
